@@ -33,6 +33,20 @@ keydownObject.addEventListener('keydown', (event) => {
     }
 });
 
+
+let url = 'http://localhost:8080/selectAll/CI002';
+
+let request = fetch(url)
+.then(response => {
+    response.json();
+})
+.then(data => {
+    console.log(data);
+})
+.catch((data) => {
+    console.log(data)
+});
+
 // function 호출
 // tablelist() ;
 

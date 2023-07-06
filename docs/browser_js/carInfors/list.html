@@ -49,10 +49,10 @@
       <div class="row">
         <div class="col-md-8">
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Search" aria-label="Search">
-            <button class="btn btn-primary" type="button">Go</button>
-          </div>
-
+            <input type="text" class="form-control" placeholder="Search..." aria-label="Search" id="keydownEnter">
+            <button class="btn btn-primary" type="button" onclick="tablelist()">Go</button>  <!-- onclick이라는 이벤트를 건다. onclick 안에 fuction 변수 이름을 넣어 호출시킴 -->
+          </div>                                             <!-- go라는 버튼을 눌러 액션을 취했을 때 fuction이 호출되어 동작됨 -->
+         
           <h2>Table</h2>
 
           <table class="table">
@@ -65,37 +65,7 @@
               </tr>
             </thead>
             <tbody id = "list">
-              <tr>
-                <td>Car 1</td>
-                <td>1</td>
-                <td>Manufacturer 1</td>
-                <td>C1</td>
-              </tr>
-              <tr>
-                <td>Car 2</td>   
-                <td>2</td>
-                <td>Manufacturer 2</td>
-                <td>C2</td>
-
-              </tr>
-              <tr>
-                <td>Car 3</td>
-                <td>3</td>
-                <td>Manufacturer 3</td>
-                <td>C3</td>
-              </tr>
-              <tr>
-                <td>Car 4</td>
-                <td>4</td>
-                <td>Manufacturer 4</td>
-                <td>C4</td>
-              </tr>
-              <tr>
-                <td>Car 5</td>
-                <td>5</td>
-                <td>Manufacturer 5</td>
-                <td>C5</td>
-              </tr>
+              <!-- Empty -->
             </tbody>
           </table>
 
@@ -130,7 +100,9 @@
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.bundle.min.js"></script>
-  <script src="../js/carinforwithfunction.js"></script>
+  <!-- <script src="../js/carinforwithfunction.js"></script> -->
+  <script src="../js/fetchs.js"></script>
+
 </body>
 </html>
 
